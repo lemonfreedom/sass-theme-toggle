@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <link rel="stylesheet" href="index.min.css">
+</head>
+
+<body>
+    主题类型
+    <select id="themeToggle">
+        <option value="light">亮色</option>
+        <option value="dark">暗色</option>
+    </select>
+    <script>
+        document.querySelector('#themeToggle').addEventListener('change', (e) => {
+            document.documentElement.dataset.theme = e.target.value
+        })
+    </script>
+</body>
+
+</html>

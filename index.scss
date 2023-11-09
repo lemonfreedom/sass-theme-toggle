@@ -1,0 +1,9 @@
+@import "theme-variables";
+@import "theme-plugin";
+
+body {
+    @include useTheme {
+        color: getVar(textColor);
+        background-color: getVar(bgColor);
+    }
+}
